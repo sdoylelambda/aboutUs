@@ -6,7 +6,6 @@ html {
   background-size: 100% auto;
 }
 .container {
-  max-width: 700px;
   width: 100%;
   margin: 0 auto;
 }
@@ -25,6 +24,15 @@ body {
   margin: 0 auto;
   color: white;
 }
+.main-content {
+  margin: 0 auto;
+  font-size: 2.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+}
 .a:hover {
   background-color: #0bf503;
   color: #0bf503;
@@ -38,6 +46,7 @@ a {
   background-image: url("sound.jpg");
   background-size: 100% auto;
   align-items: center;
+  width: 100%;
 }
 h1 {
   font-size: 3rem;
@@ -77,23 +86,45 @@ p {
   width: 80%;
   justify-content: space-around;
 }
-.accordion .panel {
-  padding: 30px;
-  border: 1px solid green;
-}
-.accordion .panel .panel-bar {
-  display: flex;
-  justify-content: space-between;
-}
-.accordion .panel .panel-bar .panel-buttons button {
+.accordion {
+  background-color: #eee;
+  color: #444;
   cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
-.accordion .panel .panel-bar .panel-buttons .hide-btn {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
   display: none;
+  overflow: hidden;
 }
-.accordion .panel .panel-content {
-  display: none;
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
-.accordion .panel .toggle-on {
-  display: block;
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
