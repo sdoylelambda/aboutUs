@@ -73,8 +73,9 @@ a {
   margin: 20px 0;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   a {
