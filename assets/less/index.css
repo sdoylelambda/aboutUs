@@ -103,7 +103,8 @@ p {
 }
 .accordion .panel {
   padding: 30px;
-  border: 1px solid green;
+  border: 2px solid green;
+  background-color: lightblue;
   max-width: 700px;
   text-align: center;
   justify-content: center;
