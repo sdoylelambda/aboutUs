@@ -38,9 +38,7 @@
     max-width: 700px;
   }
 
-  .fullNav:hover {
-    color: rgb(11, 245, 3);
-  }
+  
 
   a:hover {
     color: rgb(11, 245, 3);
@@ -59,13 +57,28 @@
       width: 100%;
   }
   
-  h1 {
-     font-size: 3rem;
-     text-align: center;
+  h2 {
+    font-size: 4rem;
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
   
-  h2 {
-    font-size: 2rem;
+  @media(max-width: 500px) {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+  
+  h1 {
+    font-size: 4rem;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  
+  h3, h4, h5 {
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 
   a {
@@ -89,6 +102,15 @@
     margin: 20px 0;
     line-height: 1.25;
     font-size: 2rem;
+  }
+
+  @media(max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+       padding: 0px;
+    }
   }
   
   .home {
