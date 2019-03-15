@@ -83,14 +83,23 @@ p {
 }
 .home header nav {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: space-around;
 }
 .primary-content {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  width: 40%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .primary-content {
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 .accordion .panel {
   padding: 30px;
