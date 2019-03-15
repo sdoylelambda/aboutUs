@@ -86,6 +86,12 @@ p {
   width: 80%;
   justify-content: space-around;
 }
+.primary-content {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40%;
+}
 .accordion .panel {
   padding: 30px;
   border: 1px solid green;
